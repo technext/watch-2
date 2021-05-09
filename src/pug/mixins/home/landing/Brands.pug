@@ -1,0 +1,11 @@
+
+mixin Brand(image)
+  .col-auto.col-md-3&attributes(attributes)
+    img(src=`${CWD}assets/img/gallery/${image}`  alt='brands')
+mixin Brands
+  +Section.py-6.bg-dark
+    .row.align-items-md-center
+      +Brand('rado.png')                 
+      +Brand('swatch.png')                  
+      +Brand('omega-1.png')                                   
+      +Brand('zenith.png')                  

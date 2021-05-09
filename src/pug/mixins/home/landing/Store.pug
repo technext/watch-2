@@ -1,0 +1,40 @@
+
+
+mixin Testimonial(config)
+  .col-12
+    h5.fs-3.fs-lg-5.lh-sm.text-uppercase  Our Store
+    p.my-4.pe-xl-5  The rise of mobile devices transforms the way we consume.Elevant channels such as Facebook.
+    p.mb-0.text-center.text-md-start=config.text
+  
+mixin Testimonials 
+  section.bg-black.py-8#testimonial 
+    +Background({ image: `${CWD}assets/img/gallery/store-bg.png`, attrs: { style: { 'background-position': 'left bottom', 'background-size': 'contain'} }, className: '' })
+    .container-lg
+      .row.flex-center
+        .col-6.order-md-0.text-center.text-md-start
+          //- img.img-fluid.mb-4(src=`${CWD}assets/img/illustrations/testimonial.png`  alt='')
+          
+        .col-sm-10.col-md-6.col-lg-6.text-center.text-md-start
+          .col-4.position-relative.me-auto.py-5
+            a.carousel-control-prev.carousel-icon.z-index-2(href='#carouselExampleDark' role='button' data-bs-slide='prev')
+              span.carousel-control-prev-icon(aria-hidden='true')
+              span.visually-hidden Previous
+            a.carousel-control-next.carousel-icon.z-index-2(href='#carouselExampleDark' role='button' data-bs-slide='next')
+              span.carousel-control-next-icon(aria-hidden='true')
+              span.visually-hidden Next
+          
+          #carouselExampleDark.carousel.slide(carousel slide carousel-fade)
+            .carousel-inner
+              .carousel-item.active(data-bs-interval='10000')
+                .row.h-100
+                  +Testimonial({image:'user.png',name:'Zoltan Nemeth',designation:'CEO of Pixer Lab',text: 'Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.'})
+                        
+              .carousel-item(data-bs-interval='2000')
+                .row.h-100
+                  +Testimonial({image:'user-1.png',name:'Jhon Doe',designation:'Web Developer',text: 'Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.'})
+
+              .carousel-item
+                .row.h-100
+                  +Testimonial({image:'user-2.png',name:'Viezh Robert',designation:'UI/UX Designer',text: 'Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.'})
+                  
+            
