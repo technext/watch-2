@@ -300,7 +300,7 @@ var navbarInit = function navbarInit() {
 
     window.addEventListener(Events.SCROLL, function () {
       var scrollTop = html.scrollTop;
-      var alpha = scrollTop / windowHeight * 0.75; // Add class on scroll
+      var alpha = scrollTop / windowHeight * 0.5; // Add class on scroll
 
       navbar.classList.add('backdrop');
 
@@ -308,7 +308,7 @@ var navbarInit = function navbarInit() {
         navbar.classList.remove('backdrop');
       }
 
-      alpha >= 1 && (alpha = 0.75);
+      alpha >= 1 && (alpha = 0.5);
       navbar.style.backgroundColor = "rgba(".concat(colorRgb[0], ", ").concat(colorRgb[1], ", ").concat(colorRgb[2], ", ").concat(alpha, ")");
       navbar.style.backgroundImage = alpha > 0 || utils.hasClass(navbarCollapse, 'show') ? backgroundImage : 'none';
       alpha > 0 || utils.hasClass(navbarCollapse, 'show') ? navbar.classList.add(shadowName) : navbar.classList.remove(shadowName);

@@ -1,31 +1,4 @@
-mixin TopNav 
-  ul.navbar-nav.me-auto.mb-2.mb-lg-0
-    li.nav-item.px-2
-      a.nav-link.fw-medium(aria-current='page', href='#categoryWomen' class= currentPage === 'index' ? 'active' : false ) Women
-    li.nav-item.px-2
-      a.nav-link.fw-medium(href='#header') Men
-    li.nav-item.px-2
-      a.nav-link.fw-medium(href='#collection') Collection
-    li.nav-item.px-2
-      a.nav-link.fw-medium(href='#outlet') Outlet
-
-  form.d-flex
-    a(href="#!").text-light  
-      svg.feather.feather-shopping-cart.me-3(xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
-        circle(cx='9' cy='21' r='1')
-        circle(cx='20' cy='21' r='1')
-        path(d='M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6')
-    a(href="#!").text-light 
-      svg.feather.feather-search.me-3(xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
-        circle(cx='11' cy='11' r='8')
-        line(x1='21' y1='21' x2='16.65' y2='16.65')
-    a(href="#!").text-light
-      svg.feather.feather-user.me-3(xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
-        path(d='M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2')
-        circle(cx='12' cy='7' r='4')
-
 mixin NavbarMajestic
-  //- +TopNav
   nav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3.d-block(data-navbar-on-scroll)
     .container
       a.navbar-brand.d-inline-flex(href='index.html')
@@ -35,15 +8,13 @@ mixin NavbarMajestic
       #navbarSupportedContent.collapse.navbar-collapse.border-top.border-lg-0.mt-4.mt-lg-0
         ul.navbar-nav.me-auto.mb-2.mb-lg-0
           li.nav-item.px-2
-            a.nav-link.fw-bold(aria-current='page', href='#categoryWomen' class= currentPage === 'index' ? 'active' : false ) WATCHES
+            a.nav-link.fw-bold(aria-current='page', href='#collections' class= currentPage === 'index' ? 'active' : false ) WATCHES
           li.nav-item.px-2
-            a.nav-link.fw-bold(href='#header') SERVICES
+            a.nav-link.fw-bold(href='#store') STORE
           li.nav-item.px-2
-            a.nav-link.fw-bold(href='#collection') FAQS
+            a.nav-link.fw-bold(href='#contact') CONTACT
           li.nav-item.px-2
-            a.nav-link.fw-bold(href='#outlet') CONTACT
-          li.nav-item.px-2
-            a.nav-link.fw-bold(href='#outlet') REQUEST VIRTUAL
+            a.nav-link.fw-bold(href='#header') REQUEST VIRTUAL
 
         form.d-flex
           a(href="#!").text-primary  

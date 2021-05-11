@@ -19,7 +19,7 @@
 // General form controls (plus a few specific high-level interventions)
 //
 
-.form-voyage-control {
+.form-theme-control {
   background-color: $white;
   background-clip: padding-box;
   border: 0 solid $input-border-color;
@@ -37,7 +37,7 @@
 }
 
 
-// Calaendar icon
+Calaendar icon
 
 input[type="date"]::-webkit-calendar-picker-indicator {
   width: 10px;
