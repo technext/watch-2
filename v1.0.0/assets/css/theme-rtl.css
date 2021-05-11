@@ -18496,21 +18496,21 @@ Calaendar icon input[type="date"]::-webkit-calendar-picker-indicator {
   backdrop-filter: blur(4px);
 }
 
-.majestic-tabs {
+.watch-tabs {
   border-bottom: 0;
 }
 
-.majestic-tabs .nav-link {
+.watch-tabs .nav-link {
   border: 2px solid transparent;
   color: #616161;
 }
 
-.majestic-tabs .nav-link:hover, .majestic-tabs .nav-link:focus {
+.watch-tabs .nav-link:hover, .watch-tabs .nav-link:focus {
   border-color: transparent;
 }
 
-.majestic-tabs .nav-link.active,
-.majestic-tabs .nav-item.show .nav-link {
+.watch-tabs .nav-link.active,
+.watch-tabs .nav-item.show .nav-link {
   border-bottom-color: #757575;
 }
 
